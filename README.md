@@ -6,9 +6,9 @@ Unofficial community patch for the Steam release of X2: The Threat, version 1.5.
 
 **To use the patch, download and run this single file:** [X2-Third-Person-Camera-Patch.exe](X2-Third-Person-Camera-Patch.exe?raw=1)
 
-The patcher's C# code from X2CameraPatch.cs is compiled into the EXE. The source file, Python, ZIP archive, and additional DLL files are not required to run it. It uses the Windows .NET Framework system libraries. The game executable itself is not included; the patcher modifies the player's own X2.exe.
+The patcher is distributed as one Windows executable and uses the .NET Framework system libraries included with Windows 10/11. The game executable itself is not included; the patcher modifies the player's own X2.exe.
 
-The optional [ZIP package](X2-Third-Person-Camera-Patch-1.0.zip) contains the same EXE together with the bilingual instructions and source code. See [full instructions](README-X2-overflow-patch.txt) or [source code](X2CameraPatch.cs).
+The optional [ZIP package](X2-Third-Person-Camera-Patch-1.0.zip) contains the EXE, bilingual instructions, and source code. See [full instructions](README-X2-overflow-patch.txt) or [source code](X2CameraPatch.cs).
 
 ## Reported issue
 
@@ -24,7 +24,7 @@ The reported crash occurs when rotating the external third-person ship inspectio
 
 To revert the change, run the patcher and choose Restore original. Steam's Verify integrity of game files command also restores the original executable.
 
-The patcher uses the .NET Framework included with Windows 10/11. It is unsigned, so Windows may display a SmartScreen or unknown-publisher warning. Check the SHA-256 below and only run a copy obtained from a source you trust. The original game executable is not included or redistributed.
+The patcher is unsigned, so Windows may display a SmartScreen or unknown-publisher warning. Check the SHA-256 below and only run a copy obtained from a source you trust. The original game executable is not included or redistributed.
 
 ## Compatibility and SHA-256
 
@@ -39,7 +39,7 @@ The patcher accepts only the supported original X2.exe or reports that the patch
 
 ## Русский
 
-Для установки достаточно скачать и запустить один файл: [X2-Third-Person-Camera-Patch.exe](X2-Third-Person-Camera-Patch.exe?raw=1). Исходный код X2CameraPatch.cs уже скомпилирован в EXE. Отдельный .cs, Python, архив ZIP или дополнительные DLL для запуска не нужны. Патчер использует системные библиотеки .NET Framework в Windows и изменяет установленный у игрока X2.exe; оригинальный файл игры в патчер не включён.
+Для установки достаточно скачать и запустить один файл: [X2-Third-Person-Camera-Patch.exe](X2-Third-Person-Camera-Patch.exe?raw=1). Патчер использует системные библиотеки .NET Framework, входящие в Windows 10/11, и исправляет установленный у игрока X2.exe. Оригинальный файл игры в загрузку не включён.
 
 Неофициальный пользовательский патч для Steam-версии X2: The Threat 1.5.0.0 исправляет вылет при вращении внешней камеры осмотра корабля от третьего лица. Игру запускали напрямую через X2.exe. Автор проверил этот режим дважды после установки исправления — камера работала без вылета. Это не официальное обновление Egosoft.
 
@@ -51,8 +51,8 @@ The patcher accepts only the supported original X2.exe or reports that the patch
 4. Нажмите Apply patch. Патчер проверит исходный файл и создаст рядом резервную копию.
 5. Запустите игру напрямую через X2.exe.
 
-Чтобы отменить исправление, запустите патчер и нажмите Restore original. Также исходный файл можно восстановить через Steam: «Проверить целостность файлов игры». Подробная инструкция на русском и английском находится в [README-X2-overflow-patch.txt](README-X2-overflow-patch.txt); ZIP с исходником и инструкцией — необязательный.
+Чтобы отменить исправление, запустите патчер и нажмите Restore original. Также исходный файл можно восстановить через Steam: «Проверить целостность файлов игры». Подробная инструкция на русском и английском находится в [README-X2-overflow-patch.txt](README-X2-overflow-patch.txt); ZIP с дополнительными материалами необязателен.
 
-Патчер использует .NET Framework, входящий в состав Windows 10/11. Он не подписан цифровым сертификатом, поэтому Windows может показать предупреждение SmartScreen или об неизвестном издателе. Сверьте SHA-256 выше и запускайте только файл из источника, которому доверяете.
+Патчер не подписан цифровым сертификатом, поэтому Windows может показать предупреждение SmartScreen или об неизвестном издателе. Сверьте SHA-256 выше и запускайте только файл из источника, которому доверяете.
 
 Патчер принимает только поддерживаемый оригинальный X2.exe либо сообщает, что исправление уже установлено. Если у вас другая версия или изменённый файл, сначала восстановите оригинал через Steam. Исходный код игры и полный дамп сбоя недоступны; исправление на уровне исполняемого файла направлено на обнаруженное переполнение при целочисленном делении и не является универсальным исправлением всех вылетов X2. Старые сообщения о другой ошибке доступа по RVA 0x6D539 находятся вне области этого патча.
